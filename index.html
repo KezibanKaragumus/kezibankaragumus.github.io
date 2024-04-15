@@ -1,232 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEZİBAN KARAGUMUS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="header">
-  <h1>KEZİBAN KARAGÜMÜŞ</h1>
-  <p>Bilgisayar Mühendisliği Öğrencisi</p>
-</div>
-
-<div class="topnav">
-  <a href="#hakkımda">HAKKIMDA</a>
-  <a href="#eğitim bilgileri">EĞİTİM BİLGİLERİ</a>
-  <a href="#yetkinlikler">YETKİNLİKLER</a>
-  <a href="#projeler ve yarışmalar">PROJELER VE YARIŞMALAR</a>
-  <a href="#eğitim ve seminerler">EĞİTİM VE SEMİNERLER</a>
-  <a href="#staj deneyimleri">STAJ DENEYİMLERİ</a>
-  <a href="#topluluk ve kulüpler">TOPLULUK VE KULÜPLER</a>
-  <a href="#iletişim" style="float:right">İLETİŞİM</a>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2 id="eğitim bilgileri">EĞİTİM BİLGİLERİ</h2>
-      <h5>LİSANS</h5>
-      <ul>
-        <li> <b>Öğrenim Türü:</b> Lisans <b> Üniversite: </b>Afyon Kocatepe Üniversitesi <b>Fakülte:</b> Mühendislik Fakültesi 
-         <b> Bölüm:</b> Bilgisayar Mühendisliği <b>Öğrenim Durumu:</b> 3.sınıf<b> Mezuniyet Durumu:</b> Hayır<b> Başlangıç 
-          Tarihi:</b> 27.09.2021 </li>
-      </ul>
-      <img src="img/aku.jpeg" alt="aku" style="width: 100%; height:250px;">
-      <p>Afyon Kocatepe Üniversitesi</p>
+    <div class="header">
+        <h1>KEZİBAN KARAGÜMÜŞ</h1>
+        <p>Bilgisayar Mühendisliği Öğrencisi</p>
+      </div>
       
-      <h5>LİSE</h5>
-      <ul>
-        <li> <b>Öğrenim Türü:</b> Lise 
-         <b> Okul:</b> Dinar Fen Lisesi
-           </li>
-      </ul>
-    </div>
-
-
-    <div class="card">
-      <h2 id="projeler ve yarışmalar">PROJELER VE YARIŞMALAR</h2>
-      <ul>
-        <li> T3 GİRİŞİM MERKEZİ GİRİŞİMCİ YETİŞTİRME PROGRAMI 2024 (Halen)  </li> <br>
-        <li> DATATHON 2023 VERİ YARIŞMASI [BTK Akademi & Google & Girişimcilik Vakfı]  </li> <br>
-        <li>  TEKNOFEST 2022 UÇAN ARABA YARIŞMASI   </li> <br>
-        <li> 2022 1. Kocatepe Mühendislik Bilimleri Öğrenci Sempozyumu Bildiri Sunumu   </li> 
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2 id="eğitim ve seminerler">EĞİTİM VE SEMİNERLER</h2>
-      <ul>
-        <li> T3 GİRİŞİM MERKEZİ GYP 2024 İlham Buluşmaları Murat Can DEMİR(THY Ekosistem Geliştirme ve Girişimcilik Programları Lideri) </li> <br>
-        <li> T3 GİRİŞİM MERKEZİ GYP 2024 İlham Buluşmaları Sadullah UZUN(TÜBİTAK BİLGEM Başkan Yardımcısı) </li> <br>
-        <li> KOSGEB Girişimcilik Eğitimi: Geleneksel Girişimci Eğitimi, İleri Girişimci Eğitimi </li> <br>
-        <li>TÜBİTAK BİLGEM YTE Bootcamp 2023: Mock-Up Figma, Mikroservis Mimarileri, Kullanıcı 
-          Deneyimi ve Kullanılabilirlik, Spring, Java  </li> <br>
-        <li> Google ML’de Kadınlar (WiML) Sempozyumu 2023   </li> <br>
-        <li> 2023 Pamukkale Teknokent Basecamp .Net Core ve .Net Web API Geliştirme (yaklaşık 3 ay)  </li> <br>
-        <li> BTK Akademi JAVA ile Programlamaya Giriş, Yapay Zeka ve Algoritmalarına Giriş, Yeni 
-          Başlayanlar için Python Programlama  </li> <br>
-        <li> Kulüp Yönetimi ile Girişimcilik ve İnovasyon Eğitimi </li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2 id="staj deneyimleri">STAJ DENEYİMLERİ</h2>
-      <ul>
-        <li> KAFTEK MÜHENDİSLİK LTD. ŞTİ. (1 AY) </li> 
-      </ul>
-    </div>
-    <div class="card">
-      <h2 id="topluluk ve kulüpler">TOPLULUK VE KULÜPLER</h2>
-      <ul>
-        <li> 2021-2022 topluluk başkan yardımcılığı  </li> 
-      </ul>
-    </div>
-   
-  </div>
-
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 id="hakkımda">HAKKIMDA</h2>
-      <img src="img/WhatsApp.jpg" alt="Manzara Resmi" style=" height:150px; border-radius: 50%;">
+      <div class="topnav">
+        <a href="#hakkımda">HAKKIMDA</a>
+        <a href="#eğitim bilgileri">EĞİTİM BİLGİLERİ</a>
+        <a href="#yetkinlikler">YETKİNLİKLER</a>
+        <a href="#projeler ve yarışmalar">PROJELER VE YARIŞMALAR</a>
+        <a href="#eğitim ve seminerler">EĞİTİM VE SEMİNERLER</a>
+        <a href="#staj deneyimleri">STAJ DENEYİMLERİ</a>
+        <a href="#topluluk ve kulüpler">TOPLULUK VE KULÜPLER</a>
+        <a href="#iletişim" style="float:right">İLETİŞİM</a>
+      </div>
       
-      <p>Bilgisayar Mühendisliği 3.Sınıf </p>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2 id="eğitim bilgileri">EĞİTİM BİLGİLERİ</h2>
+            <h5>LİSANS</h5>
+            <ul>
+              <li> <b>Öğrenim Türü:</b> Lisans <b> Üniversite: </b>Afyon Kocatepe Üniversitesi <b>Fakülte:</b> Mühendislik Fakültesi 
+               <b> Bölüm:</b> Bilgisayar Mühendisliği <b>Öğrenim Durumu:</b> 3.sınıf<b> Mezuniyet Durumu:</b> Hayır<b> Başlangıç 
+                Tarihi:</b> 27.09.2021 </li>
+            </ul>
+            <img src="img/aku.jpeg" alt="aku" style="width: 100%; height:250px;">
+            <p>Afyon Kocatepe Üniversitesi</p>
+            
+            <h5>LİSE</h5>
+            <ul>
+              <li> <b>Öğrenim Türü:</b> Lise 
+               <b> Okul:</b> 
+               <a href="resim.html" target="_blank">Dinar Fen Lisesi</a>
+                 </li>
+            </ul>
+          </div>
       
-    </div>
-    <div class="card">
-      <h2 id="yetkinlikler">YETKİNLİKLER</h2>
-      <ul>
-        <li>  C Programlama dili</li>
-        <li> C# Programlama dili</li> 
-         <li> Java Programlama dili</li>
-          <li> Python Programlama dili</li>
-           <li> Nesne Yönelimli Programlama</li><li> HTML, CSS</li> <li>MySQL, MSSQL </li><li> Nesnelerin İnterneti</li><li>SolidWorks</li>
-          
-      </ul>
-    </div>
-    <div class="card">
-      <h3>TAKİP ET</h3>
-      <p>GitHub: <a href="https://github.com/KezibanKaragumus"target="_blank">GitHub Profili</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/keziban-karagümüş-9ab77a24b"target="_blank">LinkedIn Profili</a></p>
       
-    </div>
-
-    <div class="card">
-      <h3 id="iletişim">İLETİŞİM</h3>
-      <p><b>TEL:</b> 05537752540</a></p>
-      <p><b>E-posta:</b> <a  href="mailto:kkaragumus@gmail.com">kkaragumus@gmail.com</a> adresine tıklayın.</p>
+          <div class="card">
+            <h2 id="projeler ve yarışmalar">PROJELER VE YARIŞMALAR</h2>
+            <ul>
+              <li> T3 GİRİŞİM MERKEZİ GİRİŞİMCİ YETİŞTİRME PROGRAMI 2024 (Halen)  </li> <a href="tgyp.html" target="_blank">Tıklayınız</a><br><br>
+              <li> DATATHON 2023 VERİ YARIŞMASI [BTK Akademi & Google & Girişimcilik Vakfı]  </li> <br>
+              <li>  TEKNOFEST 2022 UÇAN ARABA YARIŞMASI   </li> <a href="araba.html" target="_blank">Belge İçin Tıklayınız</a><br><br>
+              <li> 2022 1. Kocatepe Mühendislik Bilimleri Öğrenci Sempozyumu Bildiri Sunumu   </li> <a href="sempozyum.html" target="_blank">Belge İçin Tıklayınız</a><br><br>
+            </ul>
+          </div>
       
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-   <p>&copy;  NİSAN 2024 . KEZİBAN KARAGÜMÜŞ</p>
-</div>
-
+          <div class="card">
+            <h2 id="eğitim ve seminerler">EĞİTİM VE SEMİNERLER</h2>
+            <ul>
+              <li> T3 GİRİŞİM MERKEZİ GYP 2024 İlham Buluşmaları Murat Can DEMİR(THY Ekosistem Geliştirme ve Girişimcilik Programları Lideri) </li> <br><img src="img/gyp2.jpg" alt="aku" style="width: 60%; height: 250px;"><br><br>
+              <li> T3 GİRİŞİM MERKEZİ GYP 2024 İlham Buluşmaları Sadullah UZUN(TÜBİTAK BİLGEM Başkan Yardımcısı) </li> <br><img src="img/gyp1.jpg" alt="aku" style="width: 60%; height: 250px;"><br><br> <br>
+              <li> KOSGEB Girişimcilik Eğitimi: Geleneksel Girişimci Eğitimi, İleri Girişimci Eğitimi </li> <a href="kosgeb.html" target="_blank">Belge İçin Tıklayınız</a><br><br>
+              <li>TÜBİTAK BİLGEM YTE Bootcamp 2023: Mock-Up Figma, Mikroservis Mimarileri, Kullanıcı 
+                Deneyimi ve Kullanılabilirlik, Spring, Java  </li> <a href="bilgem.html" target="_blank">Belge İçin Tıklayınız</a><br><br>
+              <li> Google ML’de Kadınlar (WiML) Sempozyumu 2023   </li> <br>
+              <li> 2023 Pamukkale Teknokent Basecamp .Net Core ve .Net Web API Geliştirme (yaklaşık 3 ay)  </li> <br>
+              <li> BTK Akademi JAVA ile Programlamaya Giriş, Yapay Zeka ve Algoritmalarına Giriş, Yeni 
+                Başlayanlar için Python Programlama  </li> <br>
+              <li> Kulüp Yönetimi ile Girişimcilik ve İnovasyon Eğitimi </li>
+            </ul>
+          </div>
+      
+          <div class="card">
+            <h2 id="staj deneyimleri">STAJ DENEYİMLERİ</h2>
+            <ul>
+              <li> KAFTEK MÜHENDİSLİK LTD. ŞTİ. (1 AY) </li> 
+            </ul>
+          </div>
+          <div class="card">
+            <h2 id="topluluk ve kulüpler">TOPLULUK VE KULÜPLER</h2>
+            <ul>
+              <li> 2021-2022 topluluk başkan yardımcılığı  </li> <a href="topluluk.html" target="_blank">Belge İçin Tıklayınız</a><br><br>
+            </ul>
+          </div>
+         
+        </div>
+      
+        <div class="rightcolumn">
+          <div class="card">
+            <h2 id="hakkımda">HAKKIMDA</h2>
+            <img src="img/WhatsApp.jpg" alt="Manzara Resmi" style=" height:150px; border-radius: 50%;">
+            
+            <p>Bilgisayar Mühendisliği 3.Sınıf </p>
+            
+          </div>
+          <div class="card">
+            <h2 id="yetkinlikler">YETKİNLİKLER</h2>
+            <ul>
+              <li>  C Programlama dili</li>
+              <li> C# Programlama dili</li> 
+               <li> Java Programlama dili</li>
+                <li> Python Programlama dili</li>
+                 <li> Nesne Yönelimli Programlama</li><li> HTML, CSS</li> <li>MySQL, MSSQL </li><li> Nesnelerin İnterneti</li><li>SolidWorks</li>
+                
+            </ul>
+          </div>
+          <div class="card">
+            <h3>TAKİP ET</h3>
+            <p>GitHub: <a href="https://github.com/KezibanKaragumus"target="_blank">GitHub Profili</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/keziban-karagümüş-9ab77a24b"target="_blank">LinkedIn Profili</a></p>
+            
+          </div>
+      
+          <div class="card">
+            <h3 id="iletişim">İLETİŞİM</h3>
+            <p><b>TEL:</b> 05537752540</a></p>
+            <p><b>E-posta:</b> <a  href="mailto:kkaragumus@gmail.com">kkaragumus@gmail.com</a> adresine tıklayın.</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+         <p>&copy;  NİSAN 2024 . KEZİBAN KARAGÜMÜŞ</p>
+      </div>
 </body>
 </html>
-
-
