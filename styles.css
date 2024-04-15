@@ -58,6 +58,12 @@ body {
 }
 
 
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
 
 .card {
   background-color: white;
@@ -80,7 +86,6 @@ body {
   margin-top: 20px;
 }
 
-
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -95,4 +100,3 @@ body {
     width: 100%;
   }
 }
-
